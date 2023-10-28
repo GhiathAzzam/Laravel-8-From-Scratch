@@ -5,11 +5,11 @@
 
 <body>
 <h1>
-    <?= $post->title ?>
+    {{$post->title}}
 </h1>
 
 <div>
-    <?= $post->body ?>
+    {!! $post->body !!}
 </div>
 
 <a href="/">GO Back Home</a>
