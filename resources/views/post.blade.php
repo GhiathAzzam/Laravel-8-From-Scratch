@@ -1,17 +1,15 @@
-<!doctype html>
+<x-layout>
+    <article>
+        <h1>
+            {{$post->title}}
+        </h1>
 
-<title>My Blog</title>
-<link rel="stylesheet" href="/app.css">
+        <div>
+            {!! $post->body !!}
+        </div>
 
-<body>
-<h1>
-    {{$post->title}}
-</h1>
+        <a href="/">GO Back Home</a>
+    </article>
 
-<div>
-    {!! $post->body !!}
-</div>
+</x-layout>
 
-<a href="/">GO Back Home</a>
-
-</body>
