@@ -4,27 +4,19 @@
 <link rel="stylesheet" href="/app.css">
 
 <body>
+<?php foreach ($posts as $post) : ?>
 <article>
-    <h1><a href="/posts/my-first-post">My First Post</a></h1>
+    <h1>
+        <a href="/posts/<?= $post->slug ?>">
 
-    <p>
-        Qusai is a Bitch
-    </p>
+            <?= $post->title;?>
+        </a>
+    </h1>
+    <div>
+        <?= $post->excerpt; ?>
+    </div>
 </article>
+<?php endforeach; ?>
 
-<article>
-    <h1><a href="/posts/my-second-post">My Second Post</a></h1>
 
-    <p>
-        Qusai is a Bitch
-    </p>
-</article>
-
-<article>
-    <h1><a href="/posts/my-third-post">My Third Post</a></h1>
-
-    <p>
-        Qusai is a Bitch
-    </p>
-</article>
 </body>

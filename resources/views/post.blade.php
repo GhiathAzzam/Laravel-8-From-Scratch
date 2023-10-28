@@ -4,7 +4,13 @@
 <link rel="stylesheet" href="/app.css">
 
 <body>
-<?= $post; ?>
+<h1>
+    <?= $post->title ?>
+</h1>
+
+<div>
+    <?= $post->body ?>
+</div>
 
 <a href="/">GO Back Home</a>
 
